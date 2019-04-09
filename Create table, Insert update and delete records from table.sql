@@ -51,4 +51,33 @@ Delete from tblperson where ID = 2
 Select * from tblperson
 
 
+------------------------
+-- Adding new column
+------------------------
+Select * from tblgender
+-- Id	Gender
+-- 1	Male
+-- 2	Female
+-- 3	Unknown
 
+Alter table tblgender
+add Category int
+Select * from tblgender
+
+-- Id	Gender	Category
+-- 1	Male	NULL
+-- 2	Female	NULL
+-- 3	Unknown	NULL
+
+-----------------------
+-- Dropping column
+-----------------------
+
+Alter table tblgender
+drop column Category
+
+Select * from tblgender
+-- Id	Gender
+-- 1	Male
+-- 2	Female
+-- 3	Unknown
