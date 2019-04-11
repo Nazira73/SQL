@@ -84,6 +84,18 @@ right join tbldept
 on tblemployee.DepartmentId = tbldept.ID
 -- Name		Gender	Salary	DeptName			Location
 -- Jenny	Female	2000	IT					London
+-- Todd		Male	4000	HR					NewYork
+-- Ben		Male	3400	IT					London
+-- Sara		Female	9600	Payroll				Delhi
+-- Pam		Female	2800	Payroll				Delhi
+-- Sam		Male	5400	IT					London
+-- Tom		Male	8300	HR					NewYork
+-- Harry	Male	3200	IT					London
+-- Sweety	Female	8000	NULL				NULL
+-- Russell	Male	8600	NULL				NULL
+-- NULL		NULL	NULL	Other Department	Sydney
+-- Name		Gender	Salary	DeptName			Location
+-- Jenny	Female	2000	IT					London
 -- Ben		Male	3400	IT					London
 -- Sam		Male	5400	IT					London
 -- Harry	Male	3200	IT					London
@@ -92,6 +104,11 @@ on tblemployee.DepartmentId = tbldept.ID
 -- Todd		Male	4000	HR					NewYork
 -- Tom		Male	8300	HR					NewYork
 -- NULL		NULL	NULL	Other Department	Sydney
+
+Select Name,Gender,Salary,DeptName,Location
+from tblemployee
+full join tbldept
+on tblemployee.DepartmentId = tbldept.ID
 ---------------------------------------
 -- Cross Join
 ---------------------------------------
