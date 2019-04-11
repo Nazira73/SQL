@@ -6,7 +6,9 @@
 -- It is used to group a selected set of rows into a set of summary rows by the values of one or more columns or expressions
 -- It is always used in conjunction with one or more aggregate functions
 
+-------------------------------------------------------------------------
 -- Aggregate functions:- Sum(), min(), max(), avg(), count() etc
+-------------------------------------------------------------------------
 
 Select sum(salary) from tblemployee ---------- 46700
 Select min(salary) from tblemployee ---------- 2000
@@ -26,7 +28,9 @@ group by City
 -- NewYork	10800
 -- Qatar	12800
 
+-----------------------------------------------------------------------
 --- Grouping by multiple columns
+-----------------------------------------------------------------------
 
 Select City,Gender, Sum(Salary) as TotalSalary
 from tblEmployee
@@ -40,7 +44,9 @@ order by City
 -- Qatar	Female	9600
 -- Qatar	Male	3200
 
+-----------------------------------------------------------------------
 --- Using multiple aggregate functions
+-----------------------------------------------------------------------
 
 Select City,Gender,Sum(Salary) as TotalSalary, Count(ID) as TotalEmployees
 from tblemployee
