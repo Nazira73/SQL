@@ -72,6 +72,12 @@ on E.[Manager Id] = M.[Employee Id]
 -- Ben		Mike
 -- Sam		Mike
 
+--Syntax for case
+
+-- CASE
+-- 	WHEN expression Then ' ' else ' '
+-- END
+
 ----------------------------------------------------------
 -- 3. Coalesce()
 ----------------------------------------------------------
@@ -87,8 +93,3 @@ on E.[Manager Id] = M.[Employee Id]
 -- Ben		Mike
 -- Sam		Mike
 
---Note:
-
--- CASE
--- 	WHEN expression Then ' ' else ' '
--- END
